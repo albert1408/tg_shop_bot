@@ -1,2 +1,2 @@
-web: python bot.py
-port: 43760
+worker: python bot.py
+PORT:33500
