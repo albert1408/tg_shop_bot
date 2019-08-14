@@ -167,7 +167,6 @@ keyboard_dose_ger.row('0.5 гр. 1500 руб.')
 
 
 keyboard_order = telebot.types.ReplyKeyboardMarkup(True)
-keyboard_order.row(emoji_menu + ' К меню')
 keyboard_order.row(emoji_success+'Проверить оплату', emoji_fail+'Отменить заказ')
 
 
