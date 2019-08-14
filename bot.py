@@ -40,6 +40,7 @@ def main():
 
 if __name__ == '__main__':
     main()'''
+from telebot import types
 
 bot = telebot.TeleBot('988313821:AAEjdtUQK5Z_mUvZgp1W0xnKWpOliIWL6N4')
 
