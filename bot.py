@@ -67,6 +67,7 @@ keyboard_city.row(emoji_house + 'Уфа', emoji_house + 'Красноярск')
 keyboard_city.row(emoji_house + 'Пермь', emoji_house + 'Воронеж')
 keyboard_city.row(emoji_house + 'Саратов', emoji_house + 'Тюмень')
 keyboard_city.row(emoji_house + 'Волгоград', emoji_house + 'Краснодар')
+keyboard_city.row(emoji_house + 'Тверь', emoji_house + 'Томск')
 
 keyboard_menu = telebot.types.ReplyKeyboardMarkup(True)
 keyboard_menu.row(emoji_all+' Показать все '+emoji_all)
@@ -214,10 +215,12 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, 'Каталог товаров по Тюмени:', reply_markup=keyboard_menu)
     elif message.text == emoji_house + 'Краснодар':
         bot.send_message(message.from_user.id, 'Каталог товаров по Краснодару:', reply_markup=keyboard_menu)
+    elif message.text == emoji_house + 'Тверь':
+        bot.send_message(message.from_user.id, 'Каталог товаров по Твери:', reply_markup=keyboard_menu)
+    elif message.text == emoji_house + 'Томск':
+        bot.send_message(message.from_user.id, 'Каталог товаров по Томску:', reply_markup=keyboard_menu)
 
 
-    elif message.text == emoji_house + 'Санкт-Петербург':
-        bot.send_message(message.from_user.id, 'Каталог товаров по Санкт-Петербургу:', reply_markup=keyboard_menu)
 
     elif message.text == emoji_all+' Показать все '+emoji_all:
         bot.send_message(message.from_user.id, 'Весь товар:', reply_markup=keyboard_all)
